@@ -33,7 +33,7 @@ class BlogPostTemplate extends React.Component {
         <MDXRenderer>{post.body}</MDXRenderer>
         <hr
           style={{
-            marginBottom: rhythm(1),
+            marginBottom: rhythm(2),
           }}
         />
         <Bio />
