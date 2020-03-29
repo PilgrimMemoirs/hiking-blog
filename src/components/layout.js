@@ -20,6 +20,9 @@ class Layout extends React.Component {
             marginBottom: rhythm(1.5),
             marginTop: 0,
             maxWidth: rhythm(10),
+            position: 'fixed',
+            top: 0,
+            left: 0
           }}
         >
           <Link
@@ -42,6 +45,9 @@ class Layout extends React.Component {
             marginTop: 0,
             maxWidth: rhythm(3),
             margin: '1rem',
+            position: 'fixed',
+            top: 0,
+            left: 0
           }}
         >
           <Link
@@ -59,22 +65,19 @@ class Layout extends React.Component {
     }
     return (
       <Wrapper>
-        <header
-          style={{
-            position: 'fixed',
-            top: 0,
-            left: 0
-          }}
-        >{header}</header>
+        <header>{header}</header>
         <div
           style={{
             marginLeft: `auto`,
-            marginRight: `auto`,
-            maxWidth: rhythm(24),
+            maxWidth: rhythm(40),
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >
-          <main>{children}</main>
+          <main
+            style={{
+              maxWidth: rhythm(25),
+            }}
+          >{children}</main>
         </div>
         <Footer>
           © {new Date().getFullYear()}
