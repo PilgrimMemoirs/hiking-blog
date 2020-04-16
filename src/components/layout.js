@@ -19,7 +19,6 @@ class Layout extends React.Component {
             ...scale(1.5),
             marginBottom: rhythm(1.5),
             marginTop: 0,
-            maxWidth: rhythm(10),
             position: 'fixed',
             top: 0,
             left: 0
@@ -43,7 +42,6 @@ class Layout extends React.Component {
           style={{
             fontFamily: `Montserrat, sans-serif`,
             marginTop: 0,
-            maxWidth: rhythm(3),
             margin: '1rem',
             position: 'fixed',
             top: 0,
@@ -66,18 +64,8 @@ class Layout extends React.Component {
     return (
       <Wrapper>
         <header>{header}</header>
-        <div
-          style={{
-            marginLeft: `auto`,
-            maxWidth: rhythm(40),
-            padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-          }}
-        >
-          <main
-            style={{
-              maxWidth: rhythm(25),
-            }}
-          >{children}</main>
+        <div>
+          <main>{children}</main>
         </div>
         <Footer>
           © {new Date().getFullYear()}
