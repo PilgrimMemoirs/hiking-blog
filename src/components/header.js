@@ -7,14 +7,14 @@ class Header extends React.Component {
     const rootPath = `${__PATH_PREFIX__}/`
     const blogPath = `${__PATH_PREFIX__}/blog/`
     const title = this.props.title
+    const location = this.props.location
+    
     let header
 
     if (location.pathname === rootPath || location.pathname === blogPath) {
       header = (
         <h1
           style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
             marginTop: 0,
             position: 'fixed',
             top: 0,

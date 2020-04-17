@@ -14,7 +14,9 @@ class Layout extends React.Component {
 
     return (
       <Wrapper>
-        <Header title={title}></Header>
+        <Header
+          title={title} location={location}
+        ></Header>
         <div>
           <main>{children}</main>
         </div>
