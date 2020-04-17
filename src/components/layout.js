@@ -1,8 +1,11 @@
 import React from "react"
+import { MDXProvider } from "@mdx-js/react"
 import { Link } from "gatsby"
-import Header from "./header"
 import styled from "styled-components"
 import "./layout.css"
+
+import Header from "./header"
+import BlogHeader from "./blog-header"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -11,6 +14,7 @@ import { rhythm, scale } from "../utils/typography"
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
+    const shortcodes = { BlogHeader }
 
     return (
       <Wrapper>
@@ -18,7 +22,7 @@ class Layout extends React.Component {
           title={title} location={location}
         ></Header>
         <div>
-          <main>{children}</main>
+          <main><MDXProvider components={shortcodes}>{children}</MDXProvider></main>
         </div>
         <Footer>
           © {new Date().getFullYear()}
