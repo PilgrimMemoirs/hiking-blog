@@ -19,18 +19,30 @@ class BlogPostTemplate extends React.Component {
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <h1>{post.frontmatter.title}</h1>
-        <p
+
+        <header
           style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
+            width: "30%",
+            position: "fixed",
+            top: 0,
+            right: 0
           }}
         >
-          {post.frontmatter.date}
-        </p>
-        <MDXRenderer>{post.body}</MDXRenderer>
+          <h1>{post.frontmatter.title}</h1>
+          <p
+            style={{
+              ...scale(-1 / 5),
+              display: `block`,
+              marginBottom: rhythm(1),
+              marginTop: rhythm(-1)
+            }}
+          >
+            {post.frontmatter.date}
+          </p>
+        </header>
+        <section class="post">
+          <MDXRenderer>{post.body}</MDXRenderer>
+        </section>
         <hr
           style={{
             marginBottom: rhythm(2),

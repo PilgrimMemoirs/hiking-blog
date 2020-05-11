@@ -15,11 +15,12 @@ class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props
     const shortcodes = { BlogHeader }
-
+    
     return (
       <Wrapper>
         <Header
-          title={title} location={location}
+          title={title}
+          location={location}
         ></Header>
         <div>
           <main><MDXProvider components={shortcodes}>{children}</MDXProvider></main>

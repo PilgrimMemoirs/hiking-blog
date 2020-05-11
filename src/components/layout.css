@@ -1,2 +1,7 @@
 h1 { color: gray; }
 h3 { color: #044; }
+
+
+.post {
+  width: 70%;
+}
