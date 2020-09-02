@@ -1,9 +1,12 @@
+const siteMetadata = {
+  title: `Memoirs of a Pilgrim`,
+  description: `Hiking, backpacking and traveling around the Pacific Northwest and beyond.`,
+};
+
 module.exports = {
-  siteMetadata: {
-    title: `Memoirs of a Pilgrim`,
-    description: `Hiking, backpacing, and traveling around the Pacific Northwest and beyond.`,
-  },
+  siteMetadata: siteMetadata,
   plugins: [
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -12,10 +15,7 @@ module.exports = {
     },
     {
       resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/posts`,
-        name: `posts`,
-      },
+      options: { path: `${__dirname}/content/posts`, name: `posts` },
     },
   ],
 };
