@@ -8,9 +8,8 @@ export default ({ data, pageContext }) => {
   const { previous, next } = pageContext;
   return (
     <Layout>
-      <Dump previous={previous} />
-      <Dump next={next} />
       <h1>{frontmatter.title}</h1>
+
       <p>{frontmatter.date}</p>
       <MDXRenderer>{body}</MDXRenderer>
       {previous === false ? null : (
