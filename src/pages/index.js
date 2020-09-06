@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import SEO from 'react-seo-component';
 import { Layout } from '../components/Layout';
 import { useSiteMetadata } from '../hooks/useSiteMetadata'
-import Dump from '../components/Dump'
 
 const IndexWrapper = styled.main``;
 
