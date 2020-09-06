@@ -1,7 +1,7 @@
 const siteMetadata = {
   title: `Memoirs of a Pilgrim`,
   description: `Hiking, backpacking, and traveling around the Pacific Northwest and beyond.`,
-  image: `/default-site-image.jpg`,
+  image: `/site-image.jpg`,
   siteUrl: `https://memoirsofapilgrim.com`,
   siteLanguage: `en-US`,
   siteLocale: `en_us`,
@@ -12,8 +12,8 @@ const siteMetadata = {
 module.exports = {
   siteMetadata: siteMetadata,
   plugins: [
-    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
