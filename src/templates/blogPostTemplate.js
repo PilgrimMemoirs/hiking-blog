@@ -1,13 +1,40 @@
 import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import React from 'react';
+import SEO from 'react-seo-component';
 import { Layout } from '../components/Layout';
+import { useSiteMetadata } from '../hooks/useSiteMetadata';
 
 export default ({ data, pageContext }) => {
+  const {
+    image,
+    siteUrl,
+    siteLanguage,
+    siteLocale,
+    twitterUsername,
+    authorName,
+  } = useSiteMetadata();
   const { frontmatter, body } = data.mdx;
   const { previous, next } = pageContext;
   return (
     <Layout>
+      <SEO
+        title={title}
+        description={excerpt}
+        image={
+          cover === null
+            ? `${siteUrl}${image}`
+            : `${siteUrl}${cover.publicURL}`
+        }
+        pathname={`${siteUrl}${fields.slug}`}
+        siteLanguage={siteLanguage}
+        siteLocale={siteLocale}
+        twitterUsername={twitterUsername}
+        author={authorName}
+        article={true}
+        publishedDate={date}
+        modifiedDate={new Date(Date.now()).toISOString()}
+      />
       <h1>{frontmatter.title}</h1>
 
       <p>{frontmatter.date}</p>
