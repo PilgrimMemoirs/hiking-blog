@@ -14,7 +14,8 @@ export default ({ data, pageContext }) => {
     twitterUsername,
     authorName,
   } = useSiteMetadata();
-  const { frontmatter, body } = data.mdx;
+  const { frontmatter, body, fields, excerpt } = data.mdx;
+  const { title, date, cover } = frontmatter;
   const { previous, next } = pageContext;
   return (
     <Layout>
@@ -36,7 +37,6 @@ export default ({ data, pageContext }) => {
         modifiedDate={new Date(Date.now()).toISOString()}
       />
       <h1>{frontmatter.title}</h1>
-
       <p>{frontmatter.date}</p>
       <MDXRenderer>{body}</MDXRenderer>
       {previous === false ? null : (
@@ -62,12 +62,19 @@ export default ({ data, pageContext }) => {
 };
 
 export const query = graphql`
-  query PostsBySlug($slug: String!) {
+  query PostBySlug($slug: String!) {
     mdx(fields: { slug: { eq: $slug } }) {
-      body
       frontmatter {
         title
         date(formatString: "YYYY MMMM Do")
+        cover {
+          publicURL
+        }
+      }
+      body
+      excerpt
+      fields {
+        slug
       }
     }
   }
