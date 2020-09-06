@@ -4,6 +4,7 @@ import React from 'react';
 import SEO from 'react-seo-component';
 import { Layout } from '../components/Layout';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
+import Img from "gatsby-image"
 
 export default ({ data, pageContext }) => {
   const {
@@ -38,6 +39,11 @@ export default ({ data, pageContext }) => {
       />
       <h1>{frontmatter.title}</h1>
       <p>{frontmatter.date}</p>
+      <Img
+        className="cover"
+        sizes={frontmatter.cover.childImageSharp.sizes}
+        alt="cover photo"
+      />
       <MDXRenderer>{body}</MDXRenderer>
       {previous === false ? null : (
         <>
@@ -69,6 +75,11 @@ export const query = graphql`
         date(formatString: "YYYY MMMM Do")
         cover {
           publicURL
+          childImageSharp {
+            sizes(traceSVG: { color: "#fff" }) {
+              ...GatsbyImageSharpSizes_tracedSVG
+            }
+          }
         }
       }
       body
