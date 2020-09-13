@@ -34,8 +34,18 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   const posts = result.data.posts.nodes;
+  const tags = result.data.tags.group;
 
-    // create page for each mdx node
+  tags.forEach( tag => {
+    createPage({
+      path: `/tags/${tag.tag}/`,
+      component: tagTemplate,
+      context: {
+        tag: tag.tag
+      },
+    })
+  })
+
   posts.forEach((post, index) => {
     const previous =
       index === posts.length - 1 ? null : posts[index + 1];
@@ -49,8 +59,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         previous,
         next,
       },
-    });
-  });
+    })
+  })
 };
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
