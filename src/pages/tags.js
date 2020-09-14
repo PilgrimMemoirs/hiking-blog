@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link, graphql } from "gatsby";
+import { Layout } from '../components/Layout';
 
 export default ({
   data: { allMdx: { group }, },
 }) => {
   return (
-    <div>
+    <Layout>
       <div>
         <h1>Tags</h1>
         <ul>
@@ -18,7 +19,7 @@ export default ({
           ))}
         </ul>
       </div>
-    </div>
+    </Layout>
   );
 };
 
