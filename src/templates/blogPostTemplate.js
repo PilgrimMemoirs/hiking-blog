@@ -41,7 +41,7 @@ export default ({ data, pageContext }) => {
       <h1>{frontmatter.title}</h1>
       <p>{frontmatter.date}</p>
       <Img
-        className="cover"
+        className={postStyles.cover}
         sizes={frontmatter.cover.childImageSharp.sizes}
         alt="cover photo"
       />
