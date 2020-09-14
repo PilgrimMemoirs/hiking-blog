@@ -3,11 +3,10 @@ import { Link } from 'gatsby';
 import headerStyles from './header.module.scss'
 
 export const Header = ({ siteTitle, siteDescription }) => (
-  <header>
+  <header >
     <Link to="/">
       <h1>{ siteTitle }</h1>
     </Link>
-    <p>{ siteDescription }</p>
     <ul>
       <li><Link to="/about">About</Link></li>
       <li><Link to="/tags">Posts</Link></li>

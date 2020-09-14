@@ -1,6 +1,28 @@
 header {
   h1 {
-    color: red;
     font-family: 'Lora';
+  }
+
+  h1:hover, a:hover {
+    color: #597019;
+  }
+
+  a {
+    text-decoration: none;
+    color: #565656;
+    width: 50%;
+    display: inline-block;
+  }
+
+  ul {
+    width: 45%;
+    display: inline-block;
+    text-align: right;
+  }
+
+  ul > li {
+    display: inline-block;
+    min-width: 150px;
+    text-align: center;
   }
 }

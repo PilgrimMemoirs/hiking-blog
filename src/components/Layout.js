@@ -13,9 +13,11 @@ export const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata();
 
   return (
-    <AppStyles>
+    <div>
       <Header siteTitle={ title } siteDescription={ description } />
-      { children }
-    </AppStyles>
+      <AppStyles>
+        { children }
+      </AppStyles>
+    </div>
   );
 };
