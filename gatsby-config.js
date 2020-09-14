@@ -15,7 +15,18 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Noto Sans JP`,
+          `Lora\:500i`
+        ],
+        display: 'swap'
+      }
+    },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
