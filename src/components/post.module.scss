@@ -1,8 +1,26 @@
-span {
-  max-width: none !important;
+header {
+  width: 70%;
+  margin: 0 auto;
+
+  h2 {
+    font-family: 'Lora';
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+
+  .date {
+    font-style: italic;
+    margin-bottom: 2rem;
+  }
 }
 
 .cover {
   margin-left: -30%;
   margin-right: -30%;
+}
+
+// Targets images within post to be as wide as the content.
+  // Have to do this b/c of gross nesting and handling of default styles for mdx images.
+span {
+  max-width: none !important;
 }

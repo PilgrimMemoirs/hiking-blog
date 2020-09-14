@@ -38,14 +38,20 @@ export default ({ data, pageContext }) => {
         publishedDate={date}
         modifiedDate={new Date(Date.now()).toISOString()}
       />
-      <h1>{frontmatter.title}</h1>
-      <p>{frontmatter.date}</p>
-      <Img
-        className={postStyles.cover}
-        sizes={frontmatter.cover.childImageSharp.sizes}
-        alt="cover photo"
-      />
-      <MDXRenderer>{body}</MDXRenderer>
+      <article>
+        <header>
+          <h2>{frontmatter.title}</h2>
+          <p className={postStyles.date}>{frontmatter.date}</p>
+
+          <p>{frontmatter.description}</p>
+        </header>
+        <Img
+          className={postStyles.cover}
+          sizes={frontmatter.cover.childImageSharp.sizes}
+          alt="cover photo"
+        />
+        <MDXRenderer>{body}</MDXRenderer>
+      </article>
       {previous === false ? null : (
         <>
           {previous && (
@@ -74,6 +80,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "YYYY MMMM Do")
+        description
         cover {
           publicURL
           childImageSharp {
