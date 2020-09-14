@@ -12,7 +12,7 @@ export default ({ data, pageContext }) => {
     totalCount === 1 ? "" : "s"
   } tagged with "${tag}"`
   return (
-    <div>
+    <Layout>
       <h1>{tagHeader}</h1>
       <ul>
         {edges.map(({ node }) => {
@@ -26,7 +26,7 @@ export default ({ data, pageContext }) => {
         })}
       </ul>
       <Link to="/tags">All tags</Link>
-    </div>
+    </Layout>
   )
 }
 

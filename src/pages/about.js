@@ -3,5 +3,7 @@ import { Link, graphql } from "gatsby";
 import { Layout } from '../components/Layout';
 
 export default () => (
-  <h2> About </h2>
+  <Layout>
+    <h2> About </h2>
+  </Layout>
 )
