@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 import { Header } from './Header';
-import layoutStyles form './layout.module.scss'
+import layoutStyles from './layout.module.scss'
 
 const AppStyles = styled.main`
   width: 800px;
