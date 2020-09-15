@@ -39,7 +39,7 @@ export default ({ data, pageContext }) => {
         modifiedDate={new Date(Date.now()).toISOString()}
       />
       <article>
-        <header>
+        <header className={postStyles.postHeader}>
           <h2>{frontmatter.title}</h2>
           <p className={postStyles.date}>{frontmatter.date}</p>
 
