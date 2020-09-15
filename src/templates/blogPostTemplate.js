@@ -83,7 +83,6 @@ export default ({ data, pageContext }) => {
           )}
         </footer>
       </article>
-
     </Layout>
   );
 };
