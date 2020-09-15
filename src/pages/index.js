@@ -72,7 +72,7 @@ export const query = graphql`
           cover {
             publicURL
             childImageSharp {
-              sizes(maxWidth: 2000, traceSVG: { color: "#639" }) {
+              sizes(maxWidth: 2000, traceSVG: { color: "#565656" }) {
                 ...GatsbyImageSharpSizes_tracedSVG
               }
             }

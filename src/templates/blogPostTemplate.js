@@ -6,6 +6,7 @@ import { Layout } from '../components/Layout';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 import Img from "gatsby-image"
 import postStyles from '../components/post.module.scss'
+import Dump from '../components/Dump.js'
 
 export default ({ data, pageContext }) => {
   const {
@@ -17,7 +18,7 @@ export default ({ data, pageContext }) => {
     authorName,
   } = useSiteMetadata();
   const { frontmatter, body, fields, excerpt } = data.mdx;
-  const { title, date, cover } = frontmatter;
+  const { title, date, cover, category, description } = frontmatter;
   const { previous, next } = pageContext;
   return (
     <Layout>
@@ -40,36 +41,47 @@ export default ({ data, pageContext }) => {
       />
       <article>
         <header className={postStyles.postHeader}>
-          <h2>{frontmatter.title}</h2>
-          <p className={postStyles.date}>{frontmatter.date}</p>
-
+          <h4>
+            <Link to={"/tags/" + category}>{category}</Link>
+          </h4>
+          <h2>{title}</h2>
+          <p className={postStyles.date}>{date}</p>
           <p>{frontmatter.description}</p>
         </header>
         <Img
           className={postStyles.cover}
-          sizes={frontmatter.cover.childImageSharp.sizes}
+          sizes={cover.childImageSharp.sizes}
           alt="cover photo"
         />
+
         <MDXRenderer>{body}</MDXRenderer>
+
+        <footer>
+          <hr />
+          <h3>Read Next</h3>
+          {previous === false ? null : (
+            <>
+              {previous && (
+                <Link to={previous.fields.slug}>
+                  <img src={previous.frontmatter.cover.childImageSharp.fluid.srcWebp} />
+                  <p>{previous.frontmatter.title}</p>
+                </Link>
+              )}
+            </>
+          )}
+          {next === false ? null : (
+            <>
+              {next && (
+                <Link to={next.fields.slug}>
+                  <img src={next.frontmatter.cover.childImageSharp.fluid.srcWebp} />
+                  <p>{next.frontmatter.title}</p>
+                </Link>
+              )}
+            </>
+          )}
+        </footer>
       </article>
-      {previous === false ? null : (
-        <>
-          {previous && (
-            <Link to={previous.fields.slug}>
-              <p>{previous.frontmatter.title}</p>
-            </Link>
-          )}
-        </>
-      )}
-      {next === false ? null : (
-        <>
-          {next && (
-            <Link to={next.fields.slug}>
-              <p>{next.frontmatter.title}</p>
-            </Link>
-          )}
-        </>
-      )}
+
     </Layout>
   );
 };
@@ -81,6 +93,7 @@ export const query = graphql`
         title
         date(formatString: "YYYY MMMM Do")
         description
+        category
         cover {
           publicURL
           childImageSharp {

@@ -18,6 +18,22 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
           frontmatter {
             title
+            date
+            category
+            description
+            cover {
+              publicURL
+              childImageSharp {
+                fluid(maxWidth: 500) {
+                  base64
+                  tracedSVG
+                  srcWebp
+                  srcSetWebp
+                  originalImg
+                  originalName
+                }
+              }
+            }
           }
         }
       }
