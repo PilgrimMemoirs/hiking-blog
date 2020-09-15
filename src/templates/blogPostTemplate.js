@@ -62,9 +62,10 @@ export default ({ data, pageContext }) => {
           {previous === false ? null : (
             <>
               {previous && (
-                <Link to={previous.fields.slug}>
+                <Link to={previous.fields.slug} className={postStyles.prev}>
+                  <p className={postStyles.category}>{previous.frontmatter.category}</p>
                   <img src={previous.frontmatter.cover.childImageSharp.fluid.srcWebp} />
-                  <p>{previous.frontmatter.title}</p>
+                  <p className={postStyles.title}>{previous.frontmatter.title}</p>
                 </Link>
               )}
             </>
@@ -73,8 +74,9 @@ export default ({ data, pageContext }) => {
             <>
               {next && (
                 <Link to={next.fields.slug}>
+                  <p className={postStyles.category}>{next.frontmatter.category}</p>
                   <img src={next.frontmatter.cover.childImageSharp.fluid.srcWebp} />
-                  <p>{next.frontmatter.title}</p>
+                  <p className={postStyles.title}>{next.frontmatter.title}</p>
                 </Link>
               )}
             </>
@@ -91,7 +93,7 @@ export const query = graphql`
     mdx(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
-        date(formatString: "YYYY MMMM Do")
+        date(formatString: "MMMM Do YYYY")
         description
         category
         cover {

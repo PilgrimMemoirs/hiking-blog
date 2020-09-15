@@ -4,6 +4,7 @@
 
   h4 {
     text-align: center;
+    font-weight: lighter;
   }
 
   h2 {
@@ -30,4 +31,46 @@
   // Have to do this b/c of gross nesting and handling of default styles for mdx images.
 span {
   max-width: none !important;
+}
+
+footer {
+  margin-top: 5rem;
+  h3 {
+    font-family: 'Lora';
+    font-size:: 2rem;
+  }
+
+  .prev {
+    margin: 0 3.5% 0 0;
+  }
+
+  .category {
+    text-align: center;
+    font-size: .8rem;
+    color: #565656;
+  }
+
+  a {
+    width: 48%;
+    display: inline-block;
+    background-color: #0000000d;
+    text-decoration: none;
+    color: #292929;
+    border-radius: 3%;
+    vertical-align: top;
+    min-height: 400px;
+
+    img {
+      width: 100%;
+    }
+
+    .title {
+      padding: 0 2rem;
+      font-weight: bold;
+    }
+  }
+
+  a:hover {
+    border-bottom: solid 2px #565656;
+  }
 }

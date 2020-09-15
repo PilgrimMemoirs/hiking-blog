@@ -18,9 +18,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
           frontmatter {
             title
-            date
             category
-            description
             cover {
               publicURL
               childImageSharp {
