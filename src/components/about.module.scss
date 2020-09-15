@@ -1,0 +1,13 @@
+img {
+  border-radius: 2%;
+  width: 50%;
+}
+
+.body-text {
+  width: 45%;
+  margin-left: 4%;
+}
+
+img, .body-text {
+  display: inline-block;
+}

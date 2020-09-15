@@ -6,7 +6,6 @@ import { Layout } from '../components/Layout';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 import Img from "gatsby-image"
 import postStyles from '../components/post.module.scss'
-import Dump from '../components/Dump.js'
 
 export default ({ data, pageContext }) => {
   const {
