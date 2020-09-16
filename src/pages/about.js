@@ -6,7 +6,7 @@ import image from '../../content/imgs/jamie-pilgrim-2.jpg'
 
 export default () => (
   <Layout>
-    <img src={image} />
+    <img src={image} className={aboutStyles.aboutImg}/>
     <div className={aboutStyles.bodyText}>
       <h2> About </h2>
       <p>
