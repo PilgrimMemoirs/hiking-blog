@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby";
 import { Layout } from '../components/Layout';
 import { navigate } from 'gatsby-link'
 import contactStyles from '../components/contact.module.scss'
-import image from '../../content/imgs/jamie-pilgrim-2.jpg'
+import image from '../../content/imgs/jamie-pilgrim-1.jpg'
 
 function encode(data) {
   return Object.keys(data)

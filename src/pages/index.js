@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import SEO from 'react-seo-component';
 import { Layout } from '../components/Layout';
 import { useSiteMetadata } from '../hooks/useSiteMetadata'
+import indexStyles from '../components/index.module.scss'
 
 const IndexWrapper = styled.main``;
 
@@ -38,7 +39,7 @@ export default ({ data }) => {
       <IndexWrapper>
         {data.allMdx.nodes.map(
           ({ id, excerpt, frontmatter, fields }) => (
-            <PostWrapper key={id}>
+            <PostWrapper key={id} id={indexStyles.post}>
               <Link to={fields.slug}>
                 {!!frontmatter.cover ? (
                   <Image
