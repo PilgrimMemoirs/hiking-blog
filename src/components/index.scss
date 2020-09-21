@@ -5,9 +5,28 @@
 }
 
 .post {
-  border: 1px solid black;
+  border-bottom: solid 2px #f4f4f4;
   border-radius: 5px;
+  background-color: #0000000d;
+
+  h3, p {
+    padding: 0 5%;
+  }
+
+  h3 {
+    font-family: 'Lora';
+  }
+
   a {
     text-decoration: none;
+    color: #292929;
   }
+
+  .excerpt {
+    font-size: .75rem;
+  }
+}
+
+.post:hover {
+  border-bottom: solid 2px #29292978;
 }

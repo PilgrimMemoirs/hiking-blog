@@ -46,9 +46,8 @@ export default ({ data }) => {
                     sizes={frontmatter.cover.childImageSharp.sizes}
                   />
                 ) : null}
-                <h1>{frontmatter.title}</h1>
-                <p>{frontmatter.date}</p>
-                <p>{excerpt}</p>
+                <h3>{frontmatter.title}</h3>
+                <p className="excerpt">{excerpt}</p>
               </Link>
             </div>
           )
@@ -66,7 +65,7 @@ export const query = graphql`
     ) {
       nodes {
         id
-        excerpt(pruneLength: 250)
+        excerpt(pruneLength: 150)
         frontmatter {
           title
           date(formatString: "YYYY MMMM Do")
