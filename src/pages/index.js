@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import SEO from 'react-seo-component';
 import { Layout } from '../components/Layout';
 import { useSiteMetadata } from '../hooks/useSiteMetadata'
-import indexStyles from '../components/index.module.scss'
+import '../components/index.scss'
 
 const IndexWrapper = styled.main``;
 
@@ -36,10 +36,10 @@ export default ({ data }) => {
         siteLocale={siteLocale}
         twitterUsername={twitterUsername}
       />
-      <IndexWrapper>
+      <div className="posts">
         {data.allMdx.nodes.map(
           ({ id, excerpt, frontmatter, fields }) => (
-            <PostWrapper key={id} id={indexStyles.post}>
+            <div key={id} className="post">
               <Link to={fields.slug}>
                 {!!frontmatter.cover ? (
                   <Image
@@ -50,10 +50,10 @@ export default ({ data }) => {
                 <p>{frontmatter.date}</p>
                 <p>{excerpt}</p>
               </Link>
-            </PostWrapper>
+            </div>
           )
         )}
-      </IndexWrapper>
+      </div>
     </Layout>
   );
 };
