@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql } from "gatsby";
 import { Layout } from '../components/Layout';
+import Img from 'gatsby-image';
 import { navigate } from 'gatsby-link'
 import contactStyles from '../components/contact.module.scss'
 import image from '../../content/imgs/jamie-pilgrim-1.jpg'
@@ -36,6 +37,7 @@ export default () => {
   return (
     <Layout>
       <img src={image} className={contactStyles.contactImg}/>
+      <Image sizes />
 
       <div class={contactStyles.form}>
         <h2> Contact </h2>

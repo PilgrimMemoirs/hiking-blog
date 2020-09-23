@@ -7,10 +7,6 @@ import { Layout } from '../components/Layout';
 import { useSiteMetadata } from '../hooks/useSiteMetadata'
 import '../components/index.scss'
 
-const IndexWrapper = styled.main``;
-
-const PostWrapper = styled.div``;
-
 const Image = styled(Img)`
   border-radius: 5px;
 `;
@@ -36,7 +32,13 @@ export default ({ data }) => {
         siteLocale={siteLocale}
         twitterUsername={twitterUsername}
       />
-      <div className="posts">
+      <section className="intro">
+        <h2>Hiking, Backpacking, & Traveling around the Pacific Northwest & Beyond</h2>
+        <p>Follow along on my adventures of solo-hiking as I take my two pups to explore all that the PNW has to offer.</p>
+      </section>
+      <hr />
+      <h2>Get Cozy & Read About My Latest Adventures</h2>
+      <section className="posts">
         {data.allMdx.nodes.map(
           ({ id, excerpt, frontmatter, fields }) => (
             <div key={id} className="post">
@@ -46,13 +48,15 @@ export default ({ data }) => {
                     sizes={frontmatter.cover.childImageSharp.sizes}
                   />
                 ) : null}
+                <p className="category">{frontmatter.category}</p>
                 <h3>{frontmatter.title}</h3>
+                <date>{frontmatter.date}</date>
                 <p className="excerpt">{excerpt}</p>
               </Link>
             </div>
           )
         )}
-      </div>
+      </section>
     </Layout>
   );
 };
@@ -69,6 +73,7 @@ export const query = graphql`
         frontmatter {
           title
           date(formatString: "YYYY MMMM Do")
+          category
           cover {
             publicURL
             childImageSharp {
@@ -84,4 +89,19 @@ export const query = graphql`
       }
     }
   }
-`;
+`
+
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "blog/avatars/kyle-mathews.jpeg" }) {
+      childImageSharp {
+        # Specify the image processing specifications right in the query.
+        # Makes it trivial to update as your page's design changes.
+        fixed(width: 125, height: 125) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`

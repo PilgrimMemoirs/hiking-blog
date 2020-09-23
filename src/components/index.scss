@@ -1,3 +1,13 @@
+.intro {
+  width: 50%;
+  margin: 0 auto;
+
+  h2 {
+    font-family: 'Lora';
+    font-size: 2rem;
+  }
+}
+
 .posts {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -8,13 +18,13 @@
   border-bottom: solid 2px #f4f4f4;
   border-radius: 5px;
   background-color: #0000000d;
-
-  h3, p {
+  h3, p, date {
     padding: 0 5%;
   }
 
   h3 {
     font-family: 'Lora';
+    margin-bottom: 0;
   }
 
   a {
@@ -23,6 +33,15 @@
   }
 
   .excerpt {
+    font-size: .75rem;
+  }
+
+  .category {
+    font-size: .75rem;
+    text-align: center;
+  }
+
+  date {
     font-size: .75rem;
   }
 }
