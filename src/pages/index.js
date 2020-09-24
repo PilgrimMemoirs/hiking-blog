@@ -34,7 +34,9 @@ export default ({ data }) => {
       />
       <section className="intro">
         <h2>Hiking, Backpacking, & Traveling around the Pacific Northwest & Beyond</h2>
-        <p>Follow along on my adventures of solo-hiking as I take my two pups to explore all that the PNW has to offer.</p>
+        <p>
+          Follow along on my adventures where I often solo-hike with my two pups around Washington state.
+        </p>
       </section>
       <hr />
       <h2>Get Cozy & Read About My Latest Adventures</h2>

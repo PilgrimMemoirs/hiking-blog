@@ -33,6 +33,19 @@ span {
   max-width: none !important;
 }
 
+figure {
+  margin: 0 auto;
+}
+
+figcaption {
+  font-size: .75rem;
+  text-align: center;
+  background-color: #80808047;
+  border-radius: 0 0 5px 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #0000002b;
+}
+
 footer {
   margin-top: 5rem;
   h3 {

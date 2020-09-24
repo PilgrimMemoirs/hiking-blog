@@ -34,11 +34,9 @@ module.exports = {
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,
-          },
-        ],
-        plugins: [
-          {
-            resolve: `gatsby-remark-images`,
+            options: {
+              showCaptions: true
+            }
           },
         ],
       },
