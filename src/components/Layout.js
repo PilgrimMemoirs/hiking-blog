@@ -1,7 +1,8 @@
 import React from 'react';
-import styled from 'styled-components';
-import { useSiteMetadata } from '../hooks/useSiteMetadata';
 import { Header } from './Header';
+import { Footer } from './Footer';
+import { useSiteMetadata } from '../hooks/useSiteMetadata';
+import styled from 'styled-components';
 import layoutStyles from './layout.module.scss'
 
 const AppStyles = styled.main`
@@ -18,6 +19,7 @@ export const Layout = ({ children }) => {
       <AppStyles>
         { children }
       </AppStyles>
+      <Footer/>
     </div>
   );
 };
