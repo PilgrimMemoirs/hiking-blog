@@ -36,8 +36,6 @@ export default () => {
 
   return (
     <Layout>
-      <img src={image} className={contactStyles.contactImg}/>
-      <Image sizes />
 
       <div class={contactStyles.form}>
         <h2> Contact </h2>
