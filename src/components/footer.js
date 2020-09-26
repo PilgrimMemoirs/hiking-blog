@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import './footer.scss'
 
 export const Footer = () => (
-  <footer>
+  <footer className="site-footer">
     <h3> Test </h3>
     <ul>
       <li><Link to="/">Home</Link></li>
