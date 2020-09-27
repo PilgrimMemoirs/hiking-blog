@@ -4,8 +4,8 @@ import React from 'react';
 import SEO from 'react-seo-component';
 import { Layout } from '../components/Layout';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
-import Img from "gatsby-image"
-import '../components/post.scss'
+import Img from "gatsby-image";
+import '../components/post.scss';
 
 export default ({ data, pageContext }) => {
   const {
