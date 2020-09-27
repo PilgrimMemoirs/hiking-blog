@@ -4,12 +4,8 @@ import './footer.scss'
 
 export const Footer = () => (
   <footer className="site-footer">
-    <h3> Test </h3>
-    <ul>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/about">About</Link></li>
-      <li><Link to="/tags">Posts</Link></li>
-      <li><Link to="/contact">Contact</Link></li>
-    </ul>
+    <h3><Link to="/">Memoirs of a Pilgrim</Link></h3>
+    <p>&#169; 2020 Jamie Pilgrim</p>
+    <p>Content may not be used without permission</p>
   </footer>
 );

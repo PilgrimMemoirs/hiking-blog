@@ -2,12 +2,19 @@
   background-color: #80808012;
   border-top: 1px solid #00000021;
   margin-top: 3%;
+  text-align: center;
 
-  ul {
-    margin: 0;
+  a {
+    text-decoration: none;
+    color: gray;
   }
 
-  ul li {
-    display: inline-block;
+  a:hover {
+    color: black;
+  }
+
+  p {
+    margin: 0;
+    font-size: .75rem;
   }
 }
