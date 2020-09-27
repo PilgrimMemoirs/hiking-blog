@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link, graphql } from "gatsby";
-import { Layout } from '../components/Layout';
 import Img from 'gatsby-image';
-import { navigate } from 'gatsby-link'
-import contactStyles from '../components/contact.module.scss'
-import image from '../../content/imgs/jamie-pilgrim-1.jpg'
+import { navigate } from 'gatsby-link';
+
+import { Layout } from '../components/Layout/Layout';
+import contactStyles from '../styles/contact.scss';
+import image from '../../content/imgs/jamie-pilgrim-1.jpg';
+
 
 function encode(data) {
   return Object.keys(data)

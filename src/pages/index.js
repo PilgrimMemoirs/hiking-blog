@@ -1,11 +1,13 @@
-import { Link } from 'gatsby';
-import Img from 'gatsby-image';
 import React from 'react';
+import Img from 'gatsby-image';
+import { Link } from 'gatsby';
+
 import styled from 'styled-components';
 import SEO from 'react-seo-component';
-import { Layout } from '../components/Layout';
+
 import { useSiteMetadata } from '../hooks/useSiteMetadata'
-import '../components/index.scss'
+import { Layout } from '../components/Layout/Layout';
+import '../styles/index.scss'
 
 const Image = styled(Img)`
   border-radius: 5px;

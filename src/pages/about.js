@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link, graphql } from "gatsby";
-import { Layout } from '../components/Layout';
-import aboutStyles from '../components/about.module.scss'
-import image from '../../content/imgs/jamie-pilgrim-2.jpg'
+import { Layout } from '../components/Layout/Layout';
+
+import aboutStyles from '../styles/about.scss';
+import image from '../../content/imgs/jamie-pilgrim-2.jpg';
 
 export default () => (
   <Layout>
