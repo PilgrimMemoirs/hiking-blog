@@ -2,10 +2,10 @@ import { graphql, Link } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import React from 'react';
 import SEO from 'react-seo-component';
-import { Layout } from '../components/Layout';
+import { Layout } from '../components/Layout/Layout';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 import Img from "gatsby-image";
-import '../components/post.scss';
+import '../styles/post.scss';
 
 export default ({ data, pageContext }) => {
   const {
@@ -38,17 +38,17 @@ export default ({ data, pageContext }) => {
         publishedDate={date}
         modifiedDate={new Date(Date.now()).toISOString()}
       />
-      <article>
+      <article className="article">
         <header className="post-header">
           <h4>
             <Link to={"/tags/" + category}>{category}</Link>
           </h4>
           <h2>{title}</h2>
-          <p className={date}>{date}</p>
+          <p className="date">{date}</p>
           <p>{frontmatter.description}</p>
         </header>
         <Img
-          className={cover}
+          className="cover"
           sizes={cover.childImageSharp.sizes}
           alt="cover photo"
         />
@@ -62,9 +62,9 @@ export default ({ data, pageContext }) => {
             <>
               {previous && (
                 <Link to={previous.fields.slug} className="prev">
-                  <p className={category}>{previous.frontmatter.category}</p>
+                  <p className="category">{previous.frontmatter.category}</p>
                   <img src={previous.frontmatter.cover.childImageSharp.fluid.srcWebp} />
-                  <p className={title}>{previous.frontmatter.title}</p>
+                  <p className="title">{previous.frontmatter.title}</p>
                 </Link>
               )}
             </>
@@ -73,9 +73,9 @@ export default ({ data, pageContext }) => {
             <>
               {next && (
                 <Link to={next.fields.slug}>
-                  <p className={category}>{next.frontmatter.category}</p>
+                  <p className="category">{next.frontmatter.category}</p>
                   <img src={next.frontmatter.cover.childImageSharp.fluid.srcWebp} />
-                  <p className={title}>{next.frontmatter.title}</p>
+                  <p className="title">{next.frontmatter.title}</p>
                 </Link>
               )}
             </>
