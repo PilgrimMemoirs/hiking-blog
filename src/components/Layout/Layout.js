@@ -1,7 +1,7 @@
 import React from 'react';
-import { Header } from './Header/Header';
-import { Footer } from './Footer/Footer';
-import { useSiteMetadata } from '../hooks/useSiteMetadata';
+import { Header } from '../Header/Header';
+import { Footer } from '../Footer/Footer';
+import { useSiteMetadata } from '../../hooks/useSiteMetadata';
 import styled from 'styled-components';
 import layoutStyles from './layout.module.scss'
 

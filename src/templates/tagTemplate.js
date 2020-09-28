@@ -2,7 +2,7 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import SEO from 'react-seo-component';
-import { Layout } from '../components/Layout';
+import { Layout } from '../components/Layout/Layout';
 import Img from "gatsby-image"
 
 export default ({ data, pageContext }) => {
