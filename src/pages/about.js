@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link, graphql } from "gatsby";
 import { Layout } from '../components/Layout/Layout';
-
-import '../styles/about.scss';
+import Img from 'gatsby-image';
 import image from '../../content/imgs/jamie-pilgrim-2.jpg';
+import '../styles/about.scss';
+import Dump from '../components/Dump'
 
-export default () => (
+
+export default ({ data }) => (
   <Layout>
+    <Dump data={data} />
     <img src={image} className="about-img"/>
     <div className="body-text">
       <h2> About </h2>
@@ -29,3 +32,15 @@ export default () => (
     </div>
   </Layout>
 )
+
+export const aboutQuery = graphql`
+  query {
+    file(relativePath: { eq: "content/imgs/jamie-pilgrim-2.jpg" }) {
+      childImageSharp {
+        sizes(maxWidth: 2000, traceSVG: { color: "#565656" }) {
+          ...GatsbyImageSharpSizes_tracedSVG
+        }
+      }
+    }
+  }
+`
