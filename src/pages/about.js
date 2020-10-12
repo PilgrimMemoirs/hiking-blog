@@ -12,10 +12,18 @@ export default ({ data }) => (
     <div className="body-text">
       <h2> About </h2>
       <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Hello! I’m Jamie, a Wisconsin native that has traveled and lived in a whole slew of other places. I now reside in Seattle, Washington, which is the perfect base for going on weekly adventures. You can often find me in the mountains hiking and backpacking.
       </p>
       <p>
-      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      Since I have gotten two dogs in the past two years, I do less flying and more road trips, so I can bring them along! Ash is a 2 year old border collie/australian shepherd mix that is also deaf (I use lots of hand signals with her), and Ember is a 1 year old german shepherd/husky mix that can very much hear but sometimes chooses not to (huskies are stubborn).
+      </p>
+    </div>
+    <div>
+      <p>
+      I’ve been doing regular/weekly hiking trips pretty steadily for the last few years and have only been sharing photos and videos of them on Instagram. Recently I made the jump to further document them all with this blog and youtube!
+      </p>
+      <p>
+      Enjoy!
       </p>
     </div>
     <hr />
