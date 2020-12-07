@@ -25,6 +25,7 @@
     "gatsby-plugin-sass": "^2.3.12",
     "gatsby-plugin-sharp": "^2.6.36",
     "gatsby-plugin-styled-components": "^3.3.10",
+    "gatsby-remark-autolink-headers": "^2.7.0",
     "gatsby-remark-embed-video": "^3.0.10",
     "gatsby-remark-images": "^3.3.28",
     "gatsby-remark-responsive-iframe": "^2.4.17",

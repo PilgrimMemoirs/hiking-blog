@@ -42,6 +42,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-autolink-headers`],
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: { path: `${__dirname}/content/posts`, name: `posts` },
     },
