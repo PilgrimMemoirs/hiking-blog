@@ -41,7 +41,7 @@ export default ({ data }) => {
         </p>
       </section>
       <hr />
-      <h2>Get Cozy & Read About My Latest Adventures</h2>
+      <h2>Recent Posts</h2>
       <section className="posts">
         {data.allMdx.nodes.map(
           ({ id, excerpt, frontmatter, fields }) => (
