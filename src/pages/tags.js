@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql } from "gatsby";
 import { Layout } from '../components/Layout/Layout';
+import '../styles/tags.scss';
 
 export default ({ data: { allMdx: { group }}}) => {
 
@@ -22,6 +23,7 @@ export default ({ data: { allMdx: { group }}}) => {
       <div>
         <h1>Posts</h1>
 
+        <h2>Tags</h2>
         <div className="categories">
           <ul>
             <li><Link to="/tags/Hike/">Hikes</Link></li>
