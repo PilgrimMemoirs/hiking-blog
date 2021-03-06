@@ -5,25 +5,12 @@ import '../styles/tags.scss';
 
 export default ({ data: { allMdx: { group }}}) => {
 
-  const tags = {};
-
-  group.forEach(tag => {
-    if(tags[tag.totalCount]) {
-      tags[tag.totalCount].push(tag.fieldValue);
-    } else {
-      tags[tag.totalCount] = [tag.fieldValue];
-    }
-  })
-
-  const tagOrder = Object.keys(tags).sort( (a, b) => { return b - a});
-
-
   return (
     <Layout>
-      <div>
+      <div className="tags-page">
         <h1>Posts</h1>
 
-        <h2>Tags</h2>
+        <h2>Categories</h2>
         <div className="categories">
           <ul>
             <li><Link to="/tags/Hike/">Hikes</Link></li>
@@ -31,17 +18,20 @@ export default ({ data: { allMdx: { group }}}) => {
             <li><Link to="/tags/Road%20Trip/">Road Trips</Link></li>
           </ul>
         </div>
-          {tagOrder.map(i => (
-            <ul key={i}>
-              {tags[i].map(k => (
-                <li key={k}>
-                  <Link to={`/tags/${k}/`}>
-                    {k}
+        <div className="tags">
+          <h2>Tags</h2>
+            <ul>
+            {group.map(function(a) {
+              return (
+                <li key={a.id}>
+                  <Link to={`/tags/${a['fieldValue']}`}>
+                    {a["fieldValue"]} ({a["totalCount"]})
                   </Link>
                 </li>
-              ))}
-            </ul>
-          ))}
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </Layout>
   );

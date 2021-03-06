@@ -1,12 +1,13 @@
-.categories {
+.tags-page {
   ul {
     list-style: none;
     margin: 0 auto;
-    text-align: center;
 
     li {
       display: inline-block;
       vertical-align: top;
+      margin: 1rem;
+      padding: 1rem;
       margin: 1rem;
       padding: 1rem;
       border-radius: 1px;
@@ -14,13 +15,21 @@
 
       a {
         text-decoration: none;
-        color: white;
+        color: #707070;
       }
-
 
       &:hover {
         box-shadow: 2px 2px #707070;
+        cursor: pointer;
       }
+    }
+  }
+
+
+  .categories {
+    ul {
+      text-align: center;
+
     }
   }
 }
