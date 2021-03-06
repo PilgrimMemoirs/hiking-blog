@@ -14,7 +14,7 @@ export const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata();
 
   return (
-    <div>
+    <div className="container">
       <Header siteTitle={ title } siteDescription={ description } />
       <AppStyles>
         { children }
