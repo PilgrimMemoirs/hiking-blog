@@ -7,6 +7,7 @@ import SEO from 'react-seo-component';
 
 import { useSiteMetadata } from '../hooks/useSiteMetadata'
 import { Layout } from '../components/Layout/Layout';
+import { Socials } from '../components/Socials/Socials';
 import '../styles/index.scss'
 
 const Image = styled(Img)`
@@ -61,6 +62,7 @@ export default ({ data }) => {
           )
         )}
       </section>
+      <Socials />
     </Layout>
   );
 };

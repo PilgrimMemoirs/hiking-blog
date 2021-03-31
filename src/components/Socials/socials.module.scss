@@ -1,0 +1,27 @@
+.socials {
+  h4 {
+    width: 20%;
+    display: inline-block;
+  }
+
+  ul {
+    display: inline-block;
+    width: 70%;
+  }
+
+  li {
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: #56565682;
+  }
+
+  a:hover {
+    color: #004031;
+    text-decoration: overline;
+  }
+}

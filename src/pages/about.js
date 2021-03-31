@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql } from "gatsby";
 import { Layout } from '../components/Layout/Layout';
+import { Socials } from '../components/Socials/Socials';
 import Img from 'gatsby-image';
 import image from '../../content/imgs/jamie-pilgrim-2.jpg';
 import '../styles/about.scss';
@@ -27,16 +28,7 @@ export default ({ data }) => (
       </p>
     </div>
     <hr />
-    <div className="socials">
-      <h4>Follow On:</h4>
-      <ul>
-        <li><a href="https://www.instagram.com/pilgrimmemoirs/" target="_blank">Instagram</a></li>
-        <li><a href="https://youtube.com/c/JamiePilgrimMemoirs" target="_blank">Youtube</a></li>
-        <li><a href="https://www.twitter.com/pilgrimmemoirs/" target="_blank">Twitter</a></li>
-        <li><a href="https://unsplash.com/@pilgrimmemoirs" target="_blank">Unsplash</a></li>
-        <li><a href="https://society6.com/pilgrimmemoirs" target="_blank">Society 6</a></li>
-      </ul>
-    </div>
+    <Socials />
   </Layout>
 )
 
