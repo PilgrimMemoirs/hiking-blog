@@ -1,6 +1,6 @@
 ---
 title: My Golden Birthday Celebrations at the Dome Home in Joshua Tree, California
-date: 2021-1-31
+date: 2021-01-31
 published: false
 cover: ./cover.jpg
 season: winter

@@ -1,6 +1,6 @@
 ---
 title: California Coast Road Trip
-date: 2021-2-3
+date: 2021-02-03
 published: false
 cover: ./cover.jpg
 season: winter

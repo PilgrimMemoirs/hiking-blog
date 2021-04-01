@@ -1,14 +1,15 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import { useSiteMetadata } from '../../hooks/useSiteMetadata';
 import styled from 'styled-components';
-import socialsStyles from './socials.module.scss'
+import socialsStyles from './socials.module.scss';
 
 const AppStyles = styled.main`
   width: 800px;
   margin: 0 auto;
 `;
 
-export const Layout = ({ children }) => {
+export const Socials = ({ children }) => {
   const { title, description } = useSiteMetadata();
 
   return (

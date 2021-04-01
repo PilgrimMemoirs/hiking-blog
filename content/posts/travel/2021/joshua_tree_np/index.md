@@ -1,6 +1,6 @@
 ---
 title: Joshua Tree National Park
-date: 2021-1-30
+date: 2021-01-30
 published: false
 cover: ./cover.jpg
 season: winter
