@@ -42,6 +42,8 @@ export default ({ data }) => {
         </p>
       </section>
       <hr />
+      <Socials />
+      <hr />
       <h2>Recent Posts</h2>
       <section className="posts">
         {data.allMdx.nodes.map(
@@ -62,7 +64,6 @@ export default ({ data }) => {
           )
         )}
       </section>
-      <Socials />
     </Layout>
   );
 };

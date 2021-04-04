@@ -5,6 +5,7 @@ import SEO from 'react-seo-component';
 import { Layout } from '../components/Layout/Layout';
 import { useSiteMetadata } from '../hooks/useSiteMetadata';
 import Img from "gatsby-image";
+import { Socials } from '../components/Socials/Socials';
 import '../styles/post.scss';
 
 export default ({ data, pageContext }) => {
@@ -52,7 +53,9 @@ export default ({ data, pageContext }) => {
           sizes={cover.childImageSharp.sizes}
           alt="cover photo"
         />
-
+        <Socials />
+        <hr />
+        
         <MDXRenderer>{body}</MDXRenderer>
 
         <footer>
