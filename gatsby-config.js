@@ -42,6 +42,12 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-anchor-links",
+      options: {
+        offset: -100
+      }
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: { path: `${__dirname}/content/posts`, name: `posts` },
     },
