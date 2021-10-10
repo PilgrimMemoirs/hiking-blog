@@ -1,11 +1,11 @@
 ---
-title: Grand Tetons National Park
-date: 2021-06-26
+title: Geyers and Caves in the small town of Soda Springs, Idaho
+date: 2021-08-01
 published: true
 cover: ./cover.jpg
 category: Travel
-description: My summer of National Parks kicked off at Grand Tetons, where I spent a couple days driving around, admiring the views of the iconic mountains while scouting out prime spots for watching wildlife.
-tags: ["National Park", "Wyoming", "Road Trip", "Travel", "Mountains", "Sunset", "Wildlife", "Summer"]
+description: While traveling in between desinations we stopped in Soda Springs, Idaho and were pleasntly surprised to discover a geyser within the town and a cave a short drive outside of the town.
+tags: ["Idaho", "Road Trip", "Travel", "Geyers", "Caves", "Summer"]
 ---
 
 ## RECAP VIDEO

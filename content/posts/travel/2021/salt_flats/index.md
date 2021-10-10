@@ -1,11 +1,11 @@
 ---
-title: Grand Tetons National Park
-date: 2021-06-26
+title: Driving along the Salt Flats in Utah
+date: 2021-08-07
 published: true
 cover: ./cover.jpg
 category: Travel
-description: My summer of National Parks kicked off at Grand Tetons, where I spent a couple days driving around, admiring the views of the iconic mountains while scouting out prime spots for watching wildlife.
-tags: ["National Park", "Wyoming", "Road Trip", "Travel", "Mountains", "Sunset", "Wildlife", "Summer"]
+description: Before crossing into Nevada on I-80, there's a rest stop that gives you unoffical access to the Bonneville Salt Flats. We cruised around the flats, while admiring views of the mountains in the distance. 
+tags: ["Utah", "Road Trip", "Travel","Summer"]
 ---
 
 ## RECAP VIDEO

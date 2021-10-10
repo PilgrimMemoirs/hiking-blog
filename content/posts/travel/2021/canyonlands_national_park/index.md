@@ -1,11 +1,11 @@
 ---
-title: Grand Tetons National Park
-date: 2021-06-26
-published: true
+title: Canyonlands National Park Scenic Drive
+date: 2021-08-12
+published: false
 cover: ./cover.jpg
 category: Travel
-description: My summer of National Parks kicked off at Grand Tetons, where I spent a couple days driving around, admiring the views of the iconic mountains while scouting out prime spots for watching wildlife.
-tags: ["National Park", "Wyoming", "Road Trip", "Travel", "Mountains", "Sunset", "Wildlife", "Summer"]
+description: My final day in Utah was spent on the Canyonland's scenic drive. I was able to fit in a quick hike up to Mesa Arch, which is one of the best and most iconic views of the park. 
+tags: ["Utah", "Road Trip", "Travel", "Red Sandstone", "National Park", "Summer"]
 ---
 
 ## RECAP VIDEO

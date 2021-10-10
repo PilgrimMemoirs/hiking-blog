@@ -1,11 +1,11 @@
 ---
-title: Grand Tetons National Park
-date: 2021-06-26
-published: true
+title: Driving through Zion National Park
+date: 2021-08-12
+published: false
 cover: ./cover.jpg
 category: Travel
-description: My summer of National Parks kicked off at Grand Tetons, where I spent a couple days driving around, admiring the views of the iconic mountains while scouting out prime spots for watching wildlife.
-tags: ["National Park", "Wyoming", "Road Trip", "Travel", "Mountains", "Sunset", "Wildlife", "Summer"]
+description: I got a taste of Zion while driving the one road open to public. As we were driving through, a storm started to roll in, making the sky increasingly more dramatic before it started downpouring.
+tags: ["Utah", "Road Trip", "Travel", "Red Sandstone", "National Park", "Summer"]
 ---
 
 ## RECAP VIDEO

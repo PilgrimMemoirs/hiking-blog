@@ -1,11 +1,11 @@
 ---
-title: Grand Tetons National Park
-date: 2021-06-26
-published: true
+title: Driving around Bryce Canyon National Park
+date: 2021-08-12
+published: false
 cover: ./cover.jpg
 category: Travel
-description: My summer of National Parks kicked off at Grand Tetons, where I spent a couple days driving around, admiring the views of the iconic mountains while scouting out prime spots for watching wildlife.
-tags: ["National Park", "Wyoming", "Road Trip", "Travel", "Mountains", "Sunset", "Wildlife", "Summer"]
+description: We did the full scenic drive around Bryce Canyon, stopping at several viewpoints to admire the canyons. 
+tags: ["Utah", "Road Trip", "Travel", "Red Sandstone", "National Park", "Summer"]
 ---
 
 ## RECAP VIDEO

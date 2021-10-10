@@ -1,11 +1,11 @@
 ---
-title: Grand Tetons National Park
-date: 2021-06-26
-published: true
+title: Joshua Tree National Park in Summer
+date: 2021-09-25
+published: false
 cover: ./cover.jpg
 category: Travel
-description: My summer of National Parks kicked off at Grand Tetons, where I spent a couple days driving around, admiring the views of the iconic mountains while scouting out prime spots for watching wildlife.
-tags: ["National Park", "Wyoming", "Road Trip", "Travel", "Mountains", "Sunset", "Wildlife", "Summer"]
+description: We drove through the park looking at Joshua Trees, hiking to a natural arch, and stopped a viewpoint that overlooks Coachella Valley. 
+tags: ["California", "Road Trip", "Travel", "National Park", "Summer"]
 ---
 
 ## RECAP VIDEO

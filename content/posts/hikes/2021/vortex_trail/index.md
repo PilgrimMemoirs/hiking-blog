@@ -1,19 +1,26 @@
 ---
-title: Grand Tetons National Park
-date: 2021-06-26
-published: true
+title: HOT hike up to a vortex sandstone formation in Utah
+date: 2021-08-12
+published: false
 cover: ./cover.jpg
-category: Travel
-description: My summer of National Parks kicked off at Grand Tetons, where I spent a couple days driving around, admiring the views of the iconic mountains while scouting out prime spots for watching wildlife.
-tags: ["National Park", "Wyoming", "Road Trip", "Travel", "Mountains", "Sunset", "Wildlife", "Summer"]
+category: Hiking
+description: With little to relief from the hot sun, the exposed miles of this hike grant stunning views of the most incredible sandstone formations. 
+tags: ["Utah", "Road Trip", "Red Standstone", "Trail", "Summer"]
 ---
 
 ## RECAP VIDEO
+
 Coming Soon!
 
 
-
 ## OVERVIEW
+
+
+## LINKS
+- <a href="" alt="" target="_blank"></a>
+- <a href="" alt="" target="_blank"></a>
+- <a href="" alt="" target="_blank"></a>
+- <a href="" alt="" target="_blank"></a>
 
 
 
@@ -45,7 +52,3 @@ Coming Soon!
 
 
 ## ADDITIONAL LINKS
-- <a href="" alt="" target="_blank"></a>
-- <a href="" alt="" target="_blank"></a>
-- <a href="" alt="" target="_blank"></a>
-- <a href="" alt="" target="_blank"></a>

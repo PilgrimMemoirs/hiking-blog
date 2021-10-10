@@ -1,11 +1,11 @@
 ---
-title: Grand Tetons National Park
-date: 2021-06-26
+title: Bears, Lakes, and Peaks in Glacier National Park
+date: 2021-06-29
 published: true
 cover: ./cover.jpg
 category: Travel
-description: My summer of National Parks kicked off at Grand Tetons, where I spent a couple days driving around, admiring the views of the iconic mountains while scouting out prime spots for watching wildlife.
-tags: ["National Park", "Wyoming", "Road Trip", "Travel", "Mountains", "Sunset", "Wildlife", "Summer"]
+description: While spending severals days driving around Glacier National Park, in one day I saw EIGHT bears, one after another. Other days I saw foxes and bighorn sheep. And every night, I saw the sunset over the most gourgeous peaks along the iconic Going-to-the-sun Road. 
+tags: ["National Park", "Montana", "Road Trip", "Travel", "Mountains", "Sunset", "Wildlife", "Summer"]
 ---
 
 ## RECAP VIDEO

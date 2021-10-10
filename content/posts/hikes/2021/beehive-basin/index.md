@@ -1,19 +1,26 @@
 ---
-title: Grand Tetons National Park
-date: 2021-06-26
-published: true
+title: Hiking in Big Sky, Montana's Beehive Basin
+date: 2021-07-23
+published: false
 cover: ./cover.jpg
-category: Travel
-description: My summer of National Parks kicked off at Grand Tetons, where I spent a couple days driving around, admiring the views of the iconic mountains while scouting out prime spots for watching wildlife.
-tags: ["National Park", "Wyoming", "Road Trip", "Travel", "Mountains", "Sunset", "Wildlife", "Summer"]
+category: Hiking
+description: Big Sky Montana is home to ski slopes and fancy resorts. In summer, there are some gorgeous hikes just outside of town, including this one that leads up to an alpine lake.
+tags: ["Montana", "Road Trip", "Mountains", "Alpine Lake", "Trail", "Summer"]
 ---
 
 ## RECAP VIDEO
+
 Coming Soon!
 
 
-
 ## OVERVIEW
+
+
+## LINKS
+- <a href="" alt="" target="_blank"></a>
+- <a href="" alt="" target="_blank"></a>
+- <a href="" alt="" target="_blank"></a>
+- <a href="" alt="" target="_blank"></a>
 
 
 
@@ -45,7 +52,3 @@ Coming Soon!
 
 
 ## ADDITIONAL LINKS
-- <a href="" alt="" target="_blank"></a>
-- <a href="" alt="" target="_blank"></a>
-- <a href="" alt="" target="_blank"></a>
-- <a href="" alt="" target="_blank"></a>

@@ -1,19 +1,26 @@
 ---
-title: Grand Tetons National Park
-date: 2021-06-26
-published: true
+title: Secluded hike to Twelevemile Hot Springs
+date: 2021-08-09
+published: false
 cover: ./cover.jpg
-category: Travel
-description: My summer of National Parks kicked off at Grand Tetons, where I spent a couple days driving around, admiring the views of the iconic mountains while scouting out prime spots for watching wildlife.
-tags: ["National Park", "Wyoming", "Road Trip", "Travel", "Mountains", "Sunset", "Wildlife", "Summer"]
+category: Hiking
+description: Who would have thought one of the best hot springs to relax in would be in Nevada!? We had the large, clean springs to ourselves while we relaxed and gazed up at the rocky cliffs surrounding us.
+tags: ["Nevada", "Road Trip", "Hot Springs", "Trail", "Summer"]
 ---
 
 ## RECAP VIDEO
+
 Coming Soon!
 
 
-
 ## OVERVIEW
+
+
+## LINKS
+- <a href="" alt="" target="_blank"></a>
+- <a href="" alt="" target="_blank"></a>
+- <a href="" alt="" target="_blank"></a>
+- <a href="" alt="" target="_blank"></a>
 
 
 
@@ -45,7 +52,3 @@ Coming Soon!
 
 
 ## ADDITIONAL LINKS
-- <a href="" alt="" target="_blank"></a>
-- <a href="" alt="" target="_blank"></a>
-- <a href="" alt="" target="_blank"></a>
-- <a href="" alt="" target="_blank"></a>

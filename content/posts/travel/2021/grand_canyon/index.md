@@ -1,11 +1,11 @@
 ---
-title: Grand Tetons National Park
-date: 2021-06-26
-published: true
+title: Sunset Drive through Grand Canyons National Park
+date: 2021-10-02
+published: false
 cover: ./cover.jpg
 category: Travel
-description: My summer of National Parks kicked off at Grand Tetons, where I spent a couple days driving around, admiring the views of the iconic mountains while scouting out prime spots for watching wildlife.
-tags: ["National Park", "Wyoming", "Road Trip", "Travel", "Mountains", "Sunset", "Wildlife", "Summer"]
+description: After a day of hiking in Sedona, we headed up to Grand Canyon to watch the sunset. Our first stop was the Desert Watchtower, where we saw the sun dissapear behind the canyons. 
+tags: ["Arizona", "Road Trip", "Travel", "Canyons", "National Park", "Summer"]
 ---
 
 ## RECAP VIDEO
