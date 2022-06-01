@@ -38,7 +38,7 @@
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-seo-component": "^2.0.2",
-    "sharp": "^0.28.0",
+    "sharp": "^0.30.5",
     "styled-components": "^5.1.1",
     "subscriptions-transport-ws": "^0.9.18",
     "yarn": "^1.22.5"
